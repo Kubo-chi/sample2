@@ -117,7 +117,6 @@ class ViewController: UIViewController, MPMediaPickerControllerDelegate {
                 motionManager.startDeviceMotionUpdates( to: OperationQueue.current!, withHandler:{
                     deviceManager, error in
                     
-                    
                     //音の大きさを変化させる
                     
                     let attitude: CMAttitude = deviceManager!.attitude
