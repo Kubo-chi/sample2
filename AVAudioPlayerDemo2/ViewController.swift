@@ -118,15 +118,19 @@ class ViewController: UIViewController, MPMediaPickerControllerDelegate {
                     deviceManager, error in
                     
                     
-                    
+                    //音の大きさを変化
                     
                     let attitude: CMAttitude = deviceManager!.attitude
                     if(attitude.pitch>0){
+                        
                     player1.volume = Float(1.0 + attitude.pitch)
                     player0.volume = Float(1.0 - attitude.pitch)
+                        
                     }else{
+                        
                         player1.volume = Float(1.0 + attitude.pitch)
                         player0.volume = Float(1.0 - attitude.pitch)
+                        
                     }
                     
                 })
