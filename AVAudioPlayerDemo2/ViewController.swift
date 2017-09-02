@@ -118,7 +118,6 @@ class ViewController: UIViewController, MPMediaPickerControllerDelegate {
                     deviceManager, error in
                     
                     //音の大きさを変化させる
-                    
                     let attitude: CMAttitude = deviceManager!.attitude
                     if(attitude.pitch>0){
                         
